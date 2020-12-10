@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Test task</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body class="container">
+		<form id="rest-form" class="form mt-4">
+			<div class="form-group">
+				<label for="sum">Sum</label>
+				<input
+					type="number"
+					step="0.01"
+					value="3.14"
+					id="sum"
+					class="form-control"
+					id="sum"
+				/>
+			</div>
+			<div class="form-group">
+				<label for="price">Price</label>
+				<input
+					type="number"
+					step="0.01"
+					value="0.99"
+					id="price"
+					class="form-control"
+					id="price"
+				/>
+			</div>
+			<input
+				id="rest-btn"
+				class="btn btn-success"
+				type="submit"
+				value="Return the rest"
+			/>
+		</form>
+		<p class="rest-money-message mt-4"></p>
+		<script src="./index.js"></script>
+	</body>
+</html>

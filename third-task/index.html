@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Test task</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body class="container my-4">
+		<div id="app" class="table-responsive"></div>
+		<button class="btn btn-danger delete-selected d-none">
+			Delete selected rows
+		</button>
+		<form id="add-table-row-form" class="form mt-4">
+			<legend>Add table data</legend>
+			<div class="form-group">
+				<label for="name">Name</label>
+				<input
+					placeholder="e.g. John"
+					minlength="3"
+					required
+					pattern="[A-Za-z]{3,}"
+					type="text"
+					id="name"
+					class="form-control"
+					id="name"
+				/>
+			</div>
+			<div class="form-group">
+				<label for="surname">Surname</label>
+				<input
+					placeholder="e.g. Doe"
+					type="text"
+					minlength="3"
+					required
+					pattern="[A-Za-z]{3,}"
+					id="surname"
+					class="form-control"
+					id="surname"
+				/>
+			</div>
+			<div class="form-group">
+				<label for="email">Email</label>
+				<input
+					placeholder="e.g. test@gmail.com"
+					type="email"
+					required
+					id="email"
+					class="form-control"
+					id="email"
+				/>
+			</div>
+			<input
+				id="add-btn"
+				class="btn btn-success"
+				type="submit"
+				value="Add table row"
+			/>
+			<input
+				id="edit-btn"
+				class="btn btn-warning d-none"
+				type="submit"
+				value="Edit table row"
+			/>
+		</form>
+		<script src="./helpers.js"></script>
+		<script src="./index.js"></script>
+	</body>
+</html>
